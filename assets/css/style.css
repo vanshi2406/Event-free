@@ -179,16 +179,13 @@ nav {
     gap: 24px
 }
 
-.col-12 {
-    width: 100%;
-    padding-left: 12px;
-    padding-right: 12px;
-}
+
 
 .flex {
-    display: flex;
+    display: flex !important;
     align-items: center !important;
-
+    
+   
 }
 
 .center {
@@ -277,7 +274,105 @@ svg {
     border: none;
 }
 
-@media (max-width:1199.98px) {
+.footer {
+    background: #0d0d0d;
+    padding: 60px 20px 20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    /* mobile responsive */
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    
+}
+
+.footer-logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    max-width: 320px;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-links ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links .main {
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.footer-links .sub-main {
+    margin-bottom: 8px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.footer-links .sub-main:hover {
+    color: #01C8FF;
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.grid-parent img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.show-box {
+    background-color: #2D3CAE87;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.show-more {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.footer-credits {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+media (max-width:1199.98px) {
     .gap-64 {
         gap: 24px;
     }
@@ -311,6 +406,20 @@ svg {
 
     .show-navbar {
         right: 0 !important;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .grid-parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-parent {
+        grid-template-columns: 1fr;
     }
 }
 
